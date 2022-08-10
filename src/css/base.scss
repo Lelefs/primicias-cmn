@@ -1,0 +1,94 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  font-size: 16px;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 14px;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button,
+textarea {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+
+a {
+  color: inherit;
+  transition: all 0.2s;
+}
+
+.theme--light.v-tabs > .v-tabs-bar {
+  border-bottom: 2px solid $gray5;
+
+  .v-tab,
+  .theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active) > .v-icon,
+  .theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active) > .v-btn,
+  .theme--light.v-tabs > .v-tabs-bar .v-tab--disabled {
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+}
+
+.theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active) {
+  color: $gray2 !important;
+}
+
+.gray1--text {
+  color: $gray1;
+}
+
+.gray2--text {
+  color: $gray2;
+}
+
+.gray3--text {
+  color: $gray3;
+}
+
+.gray4--text {
+  color: $gray4;
+}
+
+.dialogs-base {
+  border-radius: 8px;
+  padding: 4px 8px;
+
+  &.v-card.v-sheet.theme--light .v-card__title {
+    color: $gray2;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.15px;
+    padding-bottom: 10px;
+  }
+
+  &.v-card.v-sheet.theme--light .v-card__text {
+    color: $gray1 !important;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+  }
+
+  .v-card__actions button {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+  }
+}
+
+.v-tooltip__content {
+  background: $gray1 !important;
+}
