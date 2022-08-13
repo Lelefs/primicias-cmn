@@ -27,6 +27,10 @@ a {
   transition: all 0.2s;
 }
 
+.theme--light.v-application {
+  background-color: $gray5 !important;
+}
+
 .theme--light.v-tabs > .v-tabs-bar {
   border-bottom: 2px solid $gray5;
 

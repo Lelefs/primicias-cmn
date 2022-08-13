@@ -31,3 +31,22 @@ export function formatDateWithTime(string) {
     return string;
   }
 }
+
+export function getMonthName(value) {
+  const monthName = [
+    'Janeiro',
+    'Fevereiro',
+    'Março',
+    'Abril',
+    'Maio',
+    'Junho',
+    'Julho',
+    'Agosto',
+    'Setembro',
+    'Outubro',
+    'Novembro',
+    'Dezembro',
+  ];
+
+  return monthName[value];
+}
